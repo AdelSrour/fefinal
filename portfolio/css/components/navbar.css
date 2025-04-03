@@ -1,0 +1,146 @@
+/* navbar container */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* left side logo */
+.navbar-title {
+    user-select: none;
+    padding: 20px 20px;
+}
+
+/* right side holding menu bar*/
+.navbar-toggle {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.navbar-toggle i {
+    font-size: 1.2rem;
+}
+
+.toggle-destroy {
+    cursor: default !important;
+    animation: shake 1s ease-in-out, explode 0.6s ease-out 2s forwards;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    5% {
+        transform: translate(-5px, -5px);
+    }
+
+    10% {
+        transform: translate(5px, 5px);
+    }
+
+    15% {
+        transform: translate(-5px, 5px);
+    }
+
+    20% {
+        transform: translate(5px, -5px);
+    }
+
+    25% {
+        transform: translate(-5px, 0);
+    }
+
+    30% {
+        transform: translate(5px, -5px);
+    }
+
+    35% {
+        transform: translate(-5px, 5px);
+    }
+
+    40% {
+        transform: translate(5px, 0);
+    }
+
+    45% {
+        transform: translate(-5px, -5px);
+    }
+
+    50% {
+        transform: translate(5px, 5px);
+    }
+
+    55% {
+        transform: translate(-5px, 5px);
+    }
+
+    60% {
+        transform: translate(5px, -5px);
+    }
+
+    65% {
+        transform: translate(-5px, 0);
+    }
+
+    70% {
+        transform: translate(5px, -5px);
+    }
+
+    75% {
+        transform: translate(-5px, 5px);
+    }
+
+    80% {
+        transform: translate(5px, 0);
+    }
+
+    85% {
+        transform: translate(-5px, -5px);
+    }
+
+    90% {
+        transform: translate(5px, 5px);
+    }
+
+    95% {
+        transform: translate(-5px, 5px);
+    }
+}
+
+@keyframes explode {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .navbar-title {
+        padding: 10px 20px;
+        width: 20%;
+        border-right: var(--border-size) solid var(--border-color);
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}

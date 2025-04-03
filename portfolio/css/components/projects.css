@@ -1,0 +1,129 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    white-space: normal;
+    margin: 10px 0 20px 0;
+    animation: projects_display 1s ease-in-out;
+}
+
+@keyframes projects_display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.project-title {
+    color: #615FFF;
+}
+
+.project-body {
+    border: var(--border-size) solid var(--border-color);
+    border-radius: 10px;
+}
+
+.project-img img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: var(--border-size) solid var(--border-color);
+}
+
+.project-desc {
+    padding: 20px;
+}
+
+.comment {
+    color: #6A9955;
+}
+
+.project-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #45556C;
+    color: var(--desktop-text-color);
+    border: 1px solid var(--border-color);
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.project-btn:hover {
+    background-color: #262f3b;
+}
+
+.skills {
+    animation: projects_display 1s ease-in-out;
+}
+
+form label {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.input-form {
+    display: block;
+    background-color: #020618;
+    color: var(--desktop-text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.input-form:focus {
+    background-color: rgb(14, 19, 41);
+}
+
+form button {
+    cursor: pointer;
+    background-color: #314158;
+    border-radius: 8px;
+    outline: none;
+    color: var(--desktop-text-color);
+    border: 1px solid var(--border-color);
+    padding: 15px 30px;
+    transition: all ease 0.4s;
+}
+
+form button:hover {
+    background-color: #262f3b;
+}
+
+.contact-form {
+    color: #fff;
+    white-space: normal;
+    margin: 10px 0 20px 0;
+    animation: projects_display 1s ease-in-out;
+}
+
+#error_messages {
+    display: none;
+    background-color: #dc3545;
+    padding:10px;
+    border-radius:5px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .projects {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}

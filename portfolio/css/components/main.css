@@ -1,0 +1,168 @@
+:root {
+    --border-color: #314158;
+    --border-size: 1px;
+
+    --desktop-background: #0F172B;
+    --desktop-text-color: #90A1B9;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: var(--desktop-background);
+}
+
+h2 {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+h6 {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Desktop body */
+.desktop {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 12fr auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    min-height: 100dvh;
+    border: var(--border-size) solid var(--border-color);
+    border-radius: 10px;
+    color: var(--desktop-text-color);
+    background-color: var(--desktop-background);
+    z-index: 1;
+}
+
+/* Background effect */
+.desktop::after {
+    content: " ";
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    width: 454px;
+    height: 492px;
+    background: #00D5BE;
+    opacity: 0.4;
+    filter: blur(87px);
+    transform: rotate(-94.3deg);
+    z-index: 1;
+}
+
+/* Background effect */
+.desktop::before {
+    content: " ";
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    width: 454px;
+    height: 492px;
+    background: #615FFF;
+    opacity: 0.4;
+    filter: blur(87px);
+    transform: rotate(13.51deg);
+    z-index: 2;
+}
+
+/* top header navbar */
+header {
+    grid-area: 1 / 1 / 2 / 2;
+    border-bottom: var(--border-size) solid var(--border-color);
+}
+
+/* desktop body */
+section {
+    grid-area: 2 / 1 / 3 / 2;
+    border-bottom: var(--border-size) solid var(--border-color);
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.title-txt {
+    margin-bottom: 4.5em;
+    color: #615FFF;
+}
+
+.color-purp {
+    color: #615FFF;
+}
+
+.color-cyan {
+    color: #00D5BE;
+}
+
+.github-link{
+    color:#FFA1AD;
+    text-decoration: none;
+}
+
+.header-comments{
+    margin-bottom: 5px;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.scroll-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
