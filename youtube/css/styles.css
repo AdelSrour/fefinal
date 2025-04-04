@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 8fr;
+    grid-template-rows: auto 13fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.navmenu {
+    grid-area: 1 / 1 / 3 / 2;
+    min-height: 100vb;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.searchbar {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #fff;
+}
+
+.body {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #F9F8F9;
+}
+
+.navbutton {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.navbutton span {
+    margin-right: 10px;
+}
+
+.navbuttons .subs {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.subscription {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.subscription:hover {
+    background-color: rgb(184, 179, 179);
+}
+
+.subscription img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+.line {
+    border-top: 1px solid grey
+}
+
+.action {
+    background-color: rgb(184, 179, 179);
+}
+
+.navbutton:hover {
+    background-color: rgb(184, 179, 179);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    padding: 10px;
+    width: 30%;
+    margin: 10px 0 10px 10px;
+}
+
+
+.searchbtn {
+    cursor: pointer;
+    background-color: #ece8ec;
+    border: 1px solid grey;
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.cards-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    row-gap: 50px;
+}
+
+.card {
+    width: 100%;
+}
+
+.video {
+    padding: 20px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+}
+
+.video:hover {
+    background-color: #b9b2b9;
+}
+
+.video-title {
+    display: flex;
+    align-items: start;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.video-title img {
+    max-width: 50px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.video-title span {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: 25%;
+    }
+    
+}
